@@ -1,15 +1,14 @@
 'use client'
 
 import {
-  CloseCircleFilled,
   GiftFilled,
   GoldFilled,
   ProfileFilled,
   SettingFilled
 } from '@ant-design/icons'
-import { Steps } from 'antd'
 import { status } from '~/constants/status'
 import { TStatus } from '~/index'
+import { Steps } from 'antd'
 
 export default function OrderStep({ resStatus }: { resStatus: TStatus }) {
   return (

@@ -1,9 +1,9 @@
 'use client'
 
-import type { FormProps } from 'antd'
-import { Button, Checkbox, Form, Input, message, Divider } from 'antd'
 import { useState } from 'react'
 import { authenticate, createUser } from '~/actions/auth'
+import type { FormProps } from 'antd'
+import { Button, Checkbox, Divider, Form, Input, message } from 'antd'
 
 type TField = {
   username?: string
@@ -105,20 +105,13 @@ export default function Login() {
           </Form.Item>
 
           {isLogin && (
-            <Form.Item<TField>
-              name='remember'
-              valuePropName='checked'
-            >
+            <Form.Item<TField> name='remember' valuePropName='checked'>
               <Checkbox>Remember me</Checkbox>
             </Form.Item>
           )}
 
           <Form.Item>
-            <Button
-              className='w-full'
-              type='primary'
-              htmlType='submit'
-            >
+            <Button className='w-full' type='primary' htmlType='submit'>
               Submit
             </Button>
           </Form.Item>

@@ -1,8 +1,9 @@
-import { authconfig } from './authconfig'
+import { getUser } from '~/actions/auth'
 import NextAuth from 'next-auth'
 import Credentials from 'next-auth/providers/credentials'
 import * as z from 'zod'
-import { getUser } from '~/actions/auth'
+
+import { authconfig } from './authconfig'
 
 export const { auth, signIn, signOut, handlers } = NextAuth({
   ...authconfig,

@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import { Roboto_Slab } from 'next/font/google'
+
 import './globals.css'
+
 import Provider from '~/configs/Provider'
 
 const nunito = Roboto_Slab({ subsets: ['latin'] })

@@ -1,8 +1,8 @@
 'use client'
 
-import { LogoutOutlined, ProjectOutlined } from '@ant-design/icons'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import { LogoutOutlined, ProjectOutlined } from '@ant-design/icons'
 import { logOut } from '~/actions/auth'
 
 const items = [{ icon: ProjectOutlined, href: '/dashboard', label: 'Orders' }]

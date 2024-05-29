@@ -1,8 +1,9 @@
 'use server'
 
-import { AuthError } from 'next-auth'
-import prisma from '~/lib/prisma'
 import { signIn, signOut } from '~/configs/auth'
+import prisma from '~/lib/prisma'
+import { AuthError } from 'next-auth'
+
 import { TLoginData } from '..'
 
 export const getUser = async ({ email, password }: TLoginData) => {

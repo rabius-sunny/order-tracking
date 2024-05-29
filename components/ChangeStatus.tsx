@@ -1,9 +1,10 @@
 'use client'
 
 import { DownOutlined } from '@ant-design/icons'
+import { changeOrder } from '~/actions/order'
 import type { MenuProps } from 'antd'
 import { Dropdown, Space } from 'antd'
-import { changeOrder } from '~/actions/order'
+
 import { TStatus } from '..'
 
 const items: MenuProps['items'] = [

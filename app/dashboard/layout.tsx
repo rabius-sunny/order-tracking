@@ -1,8 +1,8 @@
 'use client'
 
-import { Layout, theme } from 'antd'
 import DashboardFooter from '~/components/common/DashboardFooter'
 import SidebarNav from '~/components/common/SidebarNav'
+import { Layout, theme } from 'antd'
 
 const { Content, Footer, Sider } = Layout
 
@@ -17,10 +17,7 @@ export default function DashboardLayout({
 
   return (
     <Layout style={{ minHeight: '100vh' }}>
-      <Sider
-        breakpoint='lg'
-        collapsedWidth='0'
-      >
+      <Sider breakpoint='lg' collapsedWidth='0'>
         <SidebarNav />
       </Sider>
       <Layout>

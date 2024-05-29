@@ -1,7 +1,7 @@
 'use client'
 
-import { Button, Tooltip } from 'antd'
 import { changeOrder } from '~/actions/order'
+import { Button, Tooltip } from 'antd'
 
 export default function CancelOrder({
   isDisabled,

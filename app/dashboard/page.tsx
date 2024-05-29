@@ -21,10 +21,7 @@ export default async function Dashboard() {
           You cancelled this order
         </p>
       ) : (
-        <CancelOrder
-          isDisabled={status[resStatus] >= 1}
-          id={data.id}
-        />
+        <CancelOrder isDisabled={status[resStatus] >= 1} id={data.id} />
       )}
       <ChangeStatus id={data.id} />
     </div>
